@@ -1,0 +1,13 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    background-color: #BAFFCB;
+    border-radius: 5px;
+}
+
+.Header ul{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
