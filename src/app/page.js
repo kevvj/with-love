@@ -14,11 +14,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Header />
-      <Header />
-      <Header />
-      <Header />
-      <p>ho</p>
     </>
 
   )
