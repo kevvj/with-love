@@ -1,13 +1,23 @@
 .Header{
     display: flex;
     justify-content: space-between;
-    padding: 5px 25px;
-    background-color: #BAFFCB;
+    padding: 5px 50px;
+    background-color: #F8E79D;
     border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .Header ul{
     display: flex;
     list-style: none;
     gap: 35px;
+}
+
+.Header p{
+    font-size: 1rem;
+}
+
+.Header ul li{
+    font-size: 1rem;
+    cursor: pointer;
 }

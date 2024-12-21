@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap');
+
+
 
 @import "./css/Header.css";
+@import "./css/ContactSection.css";
 
 
 /*Aqui van los globals, es decir, los diseños generales de toda la pagina*/
