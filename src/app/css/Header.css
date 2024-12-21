@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 50px;
-    background-color: #f5e085;
+    background-color: #B2E7F7;
     border-radius: 5px;
-    box-shadow:inset 0px -4px 20px rgba(238, 193, 55, 0.5);
+    box-shadow:inset 0px -4px 20px rgba(108, 165, 239, 0.5);
 }
 
 .Header ul{
