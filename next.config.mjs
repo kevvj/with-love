@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    devIndicators: {
+      autoPrerender: false, // Desactiva el indicador de rutas estáticas
+    },
+  };
+  
+  export default nextConfig;
+  
