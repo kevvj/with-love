@@ -9,11 +9,11 @@ const ContactSection = () => {
             <div className="contact-section">
                 <div className="contact-content">
                     <h1> Monteria</h1>
-                    <a><FontAwesomeIcon icon={faPhone} size="1x" color="black"/>   <h2> +57 321 6301533</h2></a>
+                    <a href='' target="_blank"><FontAwesomeIcon icon={faPhone} size="1x" color="black"/>   <h2> +57 321 6301533</h2></a>
 
-                    <a><FontAwesomeIcon icon={faInstagram} size="1x" color="black"/> <h2> decoraciondeeventoswithlove</h2></a>
+                    <a href='' target="_blank"><FontAwesomeIcon icon={faInstagram} size="1x" color="black"/> <h2> decoraciondeeventoswithlove</h2></a>
 
-                    <a><FontAwesomeIcon icon={faFacebook} size="1x" color="black"/> <h2> Creatividad y Eventos With Love</h2></a>
+                    <a href='https://www.facebook.com/creatividadwithlove?mibextid=ZbWKwL' target="_blank"><FontAwesomeIcon icon={faFacebook} size="1x" color="black"/> <h2> Creatividad y Eventos With Love</h2></a>
                 </div>
 
             </div>
