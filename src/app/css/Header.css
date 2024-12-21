@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 50px;
-    background-color: #F8E79D;
+    background-color: #f5e085;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow:inset 0px -4px 20px rgba(238, 193, 55, 0.5);
 }
 
 .Header ul{
@@ -20,4 +20,21 @@
 .Header ul li{
     font-size: 1rem;
     cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .Header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Header ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .Header ul li{
+        text-align: center;
+    }
 }

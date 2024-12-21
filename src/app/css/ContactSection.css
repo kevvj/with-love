@@ -40,3 +40,18 @@
     gap: 15px;
 }
 
+@media(max-width: 700px){
+    .contact-section h1{
+        font-size: 2.5rem;
+    }
+    .contact-section h2{
+        font-size: 1rem;
+    }
+
+
+    .contact-section-container{
+        padding: 15px 0;
+    }
+
+}
+
