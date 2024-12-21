@@ -1,10 +1,11 @@
 .Header{
     display: flex;
-    justify-content: space-between;
     padding: 5px 50px;
-    background-color: #B2E7F7;
+    background-color: #E77B93;
     border-radius: 5px;
-    box-shadow:inset 0px -4px 20px rgba(108, 165, 239, 0.5);
+    box-shadow:inset 0px -4px 10px #FF0138;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .Header ul{
@@ -14,12 +15,20 @@
 }
 
 .Header p{
-    font-size: 1rem;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
 }
 
 .Header ul li{
-    font-size: 1rem;
+    
     cursor: pointer;
+}
+
+.Header a{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
 }
 
 @media(max-width: 700px){

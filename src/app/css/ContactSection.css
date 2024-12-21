@@ -10,12 +10,14 @@
     display: flex;
     border-radius: 10px;
     background-image: url('/topimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid black; */
 }
 
-.contact-section-spinner{
+.contact-section-spinner {
     width: 100%;
     min-height: 300px;
     display: flex;
@@ -26,7 +28,7 @@
 }
 
 .contact-section-spinner h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'Newsreader', serif;
     font-weight: 500;
     color: #F2ECEC;
@@ -45,7 +47,7 @@
 
 
 .contact-section h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: 'Newsreader', serif;
     font-weight: 500;
     color: #F2ECEC;
@@ -55,7 +57,7 @@
 }
 
 .contact-section h2 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin: 0;
     color: #F2ECEC;
     text-shadow: 1px 1px 2px black;
@@ -74,7 +76,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    
+
     cursor: pointer;
 }
 
