@@ -87,6 +87,13 @@
         font-size: 1rem;
     }
 
+    .contact-section-spinner h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-section-spinner h2 {
+        font-size: 1rem;
+    }
 
     .contact-section-container {
         padding: 15px 0;

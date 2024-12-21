@@ -13,6 +13,10 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+body{
+  background-color:aliceblue;
+}
+
 .principal{
   /*1rem significa que será el tamaño general por el numero de la izquierda, en este caso será 1 * 16px*/
   font-size: 1rem;
