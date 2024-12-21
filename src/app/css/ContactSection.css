@@ -9,7 +9,7 @@
     min-height: 300px;
     display: flex;
     border-radius: 10px;
-    background-image: url('/top.jpeg');
+    background-image: url('/topimg.jpeg');
     flex-direction: column;
     align-items: center;
     /* border: 1px solid black; */
