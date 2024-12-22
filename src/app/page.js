@@ -1,6 +1,7 @@
 'use client'
 import Header from "./components/Header"
 import ContactSection from "./components/ContactSection"
+import CardList from "./components/CardList"
 import { ClipLoader } from "react-spinners";
 export default function Home() {
 
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Header />
       <ContactSection></ContactSection>
+      <CardList/>
       
     </>
   )

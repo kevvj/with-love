@@ -1,0 +1,34 @@
+
+.cardlist-container {
+    display: flex; 
+    gap: 100px; 
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .cardlist {
+    border-radius: 20px; 
+    padding: 0px; 
+    text-align: center; 
+    width: 500px;   
+  }
+  
+  .cardlist-imagen {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .cardlist-titulo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .cardlist-descripcion {
+    font-size: 1rem;
+    color: #555;
+  }
+  
