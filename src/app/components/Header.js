@@ -1,6 +1,6 @@
 const Header = () =>{
     return(
-        <div className="Header">
+        <header className="Header">
             <p>WithLove</p>
 
             <ul>
@@ -9,7 +9,7 @@ const Header = () =>{
                 <li><a>Galeria</a></li>
                 <li><a>Contacto</a></li>
             </ul>        
-        </div>
+        </header>
     )
 }
 
