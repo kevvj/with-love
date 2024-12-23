@@ -1,9 +1,7 @@
 .Header{
     display: flex;
     padding: 5px 50px;
-    background-color: #E77B93;
     border-radius: 5px;
-    box-shadow:inset 0px -4px 10px #FF0138;
     align-items: center;
     justify-content: space-between;
 }
@@ -16,7 +14,6 @@
 
 .Header p{
     font-size: 1.4rem;
-    color: white;
     font-weight: bold;
 }
 
@@ -27,7 +24,6 @@
 
 .Header a{
     font-size: 1.4rem;
-    color: white;
     font-weight: bold;
 }
 

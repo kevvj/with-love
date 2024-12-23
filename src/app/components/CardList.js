@@ -24,22 +24,6 @@ const CardList = () => {
         imagen: "/image3.jpg",
         color: "#fff8c5",
       },
-      {
-        id: 4,
-        titulo: "Ambientes personalizados",
-        descripcion:
-          "Transforma cualquier lugar en un espacio único, adaptado a tus preferencias.",
-        imagen: "s",
-        color: "#fff8c5",
-      },
-      {
-        id: 5,
-        titulo: "Ambientes personalizados",
-        descripcion:
-          "Transforma cualquier lugar en un espacio único, adaptado a tus preferencias.",
-        imagen: "s",
-        color: "#fff8c5",
-      },
     ];
 
 

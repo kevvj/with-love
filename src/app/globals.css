@@ -6,6 +6,7 @@
 @import "./css/ContactSection.css";
 @import "./css/CardList.css";
 @import "./css/Footer.css";
+@import "./css/Map.css";
 
 
 /*Aqui van los globals, es decir, los diseños generales de toda la pagina*/
@@ -15,9 +16,6 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-body{
-  background-color:aliceblue;
-}
 
 .principal{
   /*1rem significa que será el tamaño general por el numero de la izquierda, en este caso será 1 * 16px*/
