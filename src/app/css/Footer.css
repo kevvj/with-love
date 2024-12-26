@@ -5,6 +5,7 @@
     text-align: center;
     font-family: Arial, sans-serif;
     position: relative;
+    margin-top: 200px;
 }
 
 .footer::before {
@@ -19,31 +20,23 @@
 }
 
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
-.footer-section {
-    margin: 10px;
-}
 
-.footer-list {
-    list-style: none;
-    padding: 0;
-}
 
-.footer-link {
-    text-decoration: none;
-}
 
-.footer-link:hover {
-    text-decoration: underline;
-}
-
-.footer-copy {
-    margin-top: 10px;
-    font-size: 14px;
+.footer-copy p{
+    font-size: 1.2rem;
     color: #555;
+}
+
+.footer-copy p a{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #87ceeb;
+    transition: color 0.3s ease;
+}
+
+.footer-copy p a:hover {
+    color: #f350ff; 
+    text-decoration: underline;
 }

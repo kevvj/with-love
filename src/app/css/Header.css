@@ -1,45 +1,81 @@
-.Header{
+.header {
     display: flex;
     padding: 5px 50px;
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: white;
+    transition: color 0.3s ease;
 }
 
-.Header ul{
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #f350ff, #87ceeb);
+    z-index: -1;
+    transition: background 1s ease, opacity 0.5s ease;
+}
+
+.header.scrolled::before {
+    background: linear-gradient(to right, rgba(243, 80, 255, 0.7), rgba(135, 206, 235, 0.7));
+    opacity: 0.8;
+    backdrop-filter: blur(5px);
+}
+
+
+.header-spacer {
+    height: 85px;
+}
+
+.header ul {
     display: flex;
     list-style: none;
     gap: 35px;
+    margin: 0;
+    padding: 0;
 }
 
-.Header p{
+.header p {
     font-size: 1.4rem;
-    font-weight: bold;
 }
 
-.Header ul li{
-    
+.header ul li {
     cursor: pointer;
 }
 
-.Header a{
-    font-size: 1.4rem;
-    font-weight: bold;
+.header a {
+    font-size: 1.2rem;
 }
 
-@media(max-width: 700px){
-    .Header{
+.header button {
+    background: #e46060;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .Header ul{
+    .header ul {
         flex-direction: column;
         padding: 0;
     }
 
-    .Header ul li{
+    .header ul li {
         text-align: center;
     }
 }
