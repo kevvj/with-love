@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -29,7 +31,7 @@ const Header = () => {
                 <li><a>Galeria</a></li>
                 <li><a>Contacto</a></li>
             </ul>
-            <button>Ordena ya!</button>
+            <button>Reservar <FontAwesomeIcon icon={faStar} size="1x" color="white" /></button>
         </header>
     )
 }
