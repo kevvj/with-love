@@ -9,6 +9,7 @@
     min-height: 300px;
     display: flex;
     border-radius: 10px;
+    padding: 45px 0;
     background-image: url('/topimg.jpeg');
     background-size: cover;
     background-position: center;
@@ -65,7 +66,6 @@
 }
 
 .contact-content {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
