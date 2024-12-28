@@ -56,12 +56,7 @@
     font-size: 1.2rem;
 }
 
-.header button {
-    background: #e46060;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 
 @media(max-width: 700px) {
     .header {

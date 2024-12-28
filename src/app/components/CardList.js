@@ -43,6 +43,7 @@ const CardList = () => {
             <h2 className="cardlist-titulo">{cardlist.titulo}</h2>
             <p className="cardlits-descripcion">{cardlist.descripcion}</p>
           </div>
+          <button className="Button">Mas detalles</button>
         </div>
       ))}
     </div>
