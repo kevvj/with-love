@@ -15,7 +15,6 @@ const Header = () => {
 
         window.addEventListener("scroll", handleScroll);
 
-        // Cleanup del evento al desmontar el componente
         return () => {
             window.removeEventListener("scroll", handleScroll);
         }
@@ -31,7 +30,7 @@ const Header = () => {
                 <li><a>Galeria</a></li>
                 <li><a>Contacto</a></li>
             </ul>
-            <button>Reservar <FontAwesomeIcon icon={faStar} size="1x" color="white" /></button>
+            <button className="Button">Reservar <FontAwesomeIcon icon={faStar} size="1x" color="white" /></button>
         </header>
     )
 }
