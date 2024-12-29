@@ -2,9 +2,9 @@
 import Header from "./components/Header"
 import ContactSection from "./components/ContactSection"
 import CardList from "./components/CardList"
-import { ClipLoader } from "react-spinners";
 import Footer from "./components/Footer";
 import Map from "./components/Map"
+import WhatsappButton from "./components/WhatsappButton";
 export default function Home() {
 
   return (
@@ -15,8 +15,7 @@ export default function Home() {
       <CardList/>
       <Map></Map>
       <Footer></Footer>
-      
-      
+      <WhatsappButton></WhatsappButton>
     </>
   )
 }
