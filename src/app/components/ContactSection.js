@@ -16,7 +16,7 @@ const ContactSection = () => {
             <div className={isClient ? "contact-section" : "contact-section-spinner"}>
                 <div className="contact-content">
                     <h1> Monteria</h1>
-                    <a href='' target="_blank">
+                    <a target="_blank">
                         {isClient && <FontAwesomeIcon icon={faPhone} size="1x" color="black" />}
 
                         <h2> +57 321 6301533</h2></a>

@@ -4,7 +4,7 @@ const WhatsappButton = () => {
 
     return (
         <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-button">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png"></img>
+            <img src="/WhatsApp.svg"></img>
         </a>
     )
 }

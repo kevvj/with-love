@@ -33,18 +33,21 @@ const CardList = () => {
           className="cardlist"
           style={{ backgroundColor: cardlist.color }}
         >
-          <img
-            src={cardlist.imagen}
-            alt={cardlist.titulo}
-            className="cardlist-imagen"
-          />
 
-          <div className="cardlist-text">
-            <h2 className="cardlist-titulo">{cardlist.titulo}</h2>
-            <p className="cardlits-descripcion">{cardlist.descripcion}</p>
+          <div>
+            <img
+              src={cardlist.imagen}
+              alt={cardlist.titulo}
+              className="cardlist-imagen"
+            />
+
+            <div className="cardlist-text">
+              <h2 className="cardlist-titulo">{cardlist.titulo}</h2>
+              <p className="cardlits-descripcion">{cardlist.descripcion}</p>
+            </div>
           </div>
           <div className="button-container">
-          <button className="Button">Mas detalles</button>
+            <button className="Button">Mas detalles</button>
           </div>
         </div>
       ))}
