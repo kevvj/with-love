@@ -29,5 +29,10 @@ display: flex;
     .map{
         background-image: none;
         padding: 0;
+        width: 100%;
+    }
+
+    .iframe-map{
+        width: 100%;
     }
 }
