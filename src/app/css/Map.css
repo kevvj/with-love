@@ -21,4 +21,13 @@ display: flex;
 
 .iframe-map{
     border: 0;
+    width: 600px;
+    height: 450px;    
+}
+
+@media(max-width: 700px) {
+    .map{
+        background-image: none;
+        padding: 0;
+    }
 }
