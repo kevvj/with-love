@@ -25,7 +25,7 @@ const Header = () => {
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
             <p>Logo de WithLove</p>
 
-            <ul>
+            <ul className="menu-header">
                 <li><a>Inicio</a></li>
                 <li><a>Servicios</a></li>
                 <li><a>Galeria</a></li>
@@ -33,7 +33,16 @@ const Header = () => {
             </ul>
             <button className="order-button">Reservar <FontAwesomeIcon icon={faStar} size="1x" color="white" /></button>
 
+            <div className="dropdown">
             <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="white"></FontAwesomeIcon></button>
+            <ul>
+                <li><a>Inicio</a></li>
+                <li><a>Servicios</a></li>
+                <li><a>Galeria</a></li>
+                <li><a>Contacto</a></li>
+            </ul>
+            </div>
+        
         </header>
     )
 }
