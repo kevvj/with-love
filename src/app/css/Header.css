@@ -78,6 +78,7 @@
         align-items: center;
         position: static;
         background: linear-gradient(to right, #f350ff, #87ceeb);
+        padding: 0px 20px;
 
     }
 
@@ -123,6 +124,7 @@
     }
 
     .header.scrolled::before {
+        
         position: static;
         opacity: 1;
         backdrop-filter: none;
@@ -134,6 +136,7 @@
     }
 
     .header::before {
+        content: none;
         position: static;
     }
 
