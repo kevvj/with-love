@@ -19,18 +19,25 @@
 
 .profile-description h1,
 .profile-description h2,
-.profile-description p{
+.profile-description p,
+.profile-description span{
     padding: 0;
     gap: 0;
     margin: 0;
 }
 
-.profile-description h1{
+.profile-description h2{
     font-size: 2.3rem;
-    color: #FF4081;
+    color: #81D4FA;
 }
 
 .profile-description p{
     font-size: 1.3rem;
     color: #616161;
+}
+
+.profile-description span{
+    font-size: 1.3rem;
+    color: #bd0094;
+    font-weight: bold;
 }
