@@ -12,8 +12,9 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px; 
-    width: 500px;  
+    width: 300px;  
     justify-content: space-between;
+    padding: 20px;
   }
   
   .cardlist-imagen {
@@ -37,7 +38,7 @@
   
   .cardlits-descripcion{
     font-size: 1rem;
-    color: #555;
+    color: #555555;
     margin: 0;
   }
 
@@ -49,7 +50,18 @@
   }
 
   .cardlist button{
-    background-color: black;
+    background-color: rgb(172, 247, 155);
     margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
   }
   
+
+  .cardlist-icon{
+    width: 100%;
+  }
+
+  .cardlist-icon svg{
+    width: 100%;
+    height: 100px;
+  }

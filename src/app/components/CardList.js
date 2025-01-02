@@ -1,27 +1,34 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
+import { faGift } from "@fortawesome/free-solid-svg-icons";
+import { faHandshakeSimple } from "@fortawesome/free-solid-svg-icons";
 const CardList = () => {
   const cardlist = [
     {
       id: 1,
       titulo: "Paquetes completos",
       descripcion:
-        "Explora nuestros paquetes de decoración listos para usar, inspirados en trabajos anteriores y temáticas populares. Cada paquete incluye mobiliario, decoraciones y detalles perfectos para transformar tu evento sin complicaciones.",
-      imagen: "/image1.jpg",
+        "Explora nuestros paquetes de decoración listos para usar.",
+      imagen: "",
       color: "#ffd1dc",
+      icon:faCalendarCheck
     },
     {
       id: 2,
       titulo: "Decoraciones temáticas",
       descripcion: "Explora nuestras decoraciones únicas para cada ocasión.",
-      imagen: "/image2.jpg",
+      imagen: "",
       color: "#cde8fb",
+      icon:faGift
     },
     {
       id: 3,
       titulo: "Ambientes personalizados",
       descripcion:
         "Transforma cualquier lugar en un espacio único, adaptado a tus preferencias.",
-      imagen: "/image3.jpg",
+      imagen: "",
       color: "#fff8c5",
+      icon:faHandshakeSimple
     },
   ];
 
@@ -35,11 +42,14 @@ const CardList = () => {
         >
 
           <div>
-            <img
-              src={cardlist.imagen}
+            {/* <img
               alt={cardlist.titulo}
               className="cardlist-imagen"
-            />
+            /> */}
+            <div className="cardlist-icon">
+            <FontAwesomeIcon size="1x" color="#white" icon={cardlist.icon}></FontAwesomeIcon>
+            </div>
+            
 
             <div className="cardlist-text">
               <h2 className="cardlist-titulo">{cardlist.titulo}</h2>

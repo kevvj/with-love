@@ -13,8 +13,9 @@ export default function Home() {
       <Header />
       <div className="header-spacer"></div>
       <ProfileCard></ProfileCard>
-      <ContactSection></ContactSection>
       <CardList/>
+      <ContactSection></ContactSection>
+      
       <Map></Map>
       <Footer></Footer>
       <WhatsappButton></WhatsappButton>
