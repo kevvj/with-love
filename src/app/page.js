@@ -5,12 +5,14 @@ import CardList from "./components/CardList"
 import Footer from "./components/Footer";
 import Map from "./components/Map"
 import WhatsappButton from "./components/WhatsappButton";
+import ProfileCard from "./components/ProfileCard";
 export default function Home() {
 
   return (
     <>
       <Header />
       <div className="header-spacer"></div>
+      <ProfileCard></ProfileCard>
       <ContactSection></ContactSection>
       <CardList/>
       <Map></Map>

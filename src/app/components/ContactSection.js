@@ -15,7 +15,7 @@ const ContactSection = () => {
         <div className="contact-section-container">
             <div className={isClient ? "contact-section" : "contact-section-spinner"}>
                 <div className="contact-content">
-                    <h1> Monteria</h1>
+                    <h1>Contactanos</h1>
                     <a target="_blank">
                         {isClient && <FontAwesomeIcon icon={faPhone} size="1x" color="black" />}
 

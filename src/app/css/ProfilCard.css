@@ -1,0 +1,36 @@
+.profile-card-container{
+    padding: 50px;
+}
+
+.profile-card{
+    display: flex;
+}
+.profile-picture{
+    border-radius: 50%;
+}
+
+.profile-description{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    
+}
+
+.profile-description h1,
+.profile-description h2,
+.profile-description p{
+    padding: 0;
+    gap: 0;
+    margin: 0;
+}
+
+.profile-description h1{
+    font-size: 2.3rem;
+    color: #FF4081;
+}
+
+.profile-description p{
+    font-size: 1.3rem;
+    color: #616161;
+}

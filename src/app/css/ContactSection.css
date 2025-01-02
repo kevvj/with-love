@@ -10,7 +10,6 @@
     display: flex;
     border-radius: 10px;
     padding: 45px 0;
-    background-image: url('/topimg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,31 +27,19 @@
     border: 1px solid black;
 }
 
-.contact-section-spinner h1 {
-    font-size: 6rem;
-    font-family: 'Newsreader', serif;
-    font-weight: 500;
-    color: #F2ECEC;
-    text-shadow: 2px 2px 3px black;
-    margin-top: 15px;
-    margin: 0;
-}
 
 .contact-section-spinner h2 {
     font-size: 1.3rem;
     margin: 0;
-    color: #F2ECEC;
-    text-shadow: 1px 1px 2px black;
+    color: #616161;
     font-family: 'Newsreader', serif;
 }
 
 
 .contact-section h1 {
-    font-size: 6rem;
-    font-family: 'Newsreader', serif;
+    font-size: 4rem;
     font-weight: 500;
-    color: #F2ECEC;
-    text-shadow: 2px 2px 3px black;
+    color: #FF4081;
     margin-top: 15px;
     margin: 0;
 }
@@ -60,9 +47,8 @@
 .contact-section h2 {
     font-size: 1.6rem;
     margin: 0;
-    color: #F2ECEC;
-    text-shadow: 1px 1px 2px black;
-    font-family: 'Newsreader', serif;
+    color: #616161;
+    transition: color 0.3s ease;
 }
 
 .contact-content {
@@ -76,8 +62,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
-
     cursor: pointer;
+    color: #616161;
+}
+
+.contact-content h2:hover{
+    color: #FF7043;
 }
 
 @media(max-width: 700px) {
