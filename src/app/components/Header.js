@@ -23,7 +23,7 @@ const Header = () => {
 
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-            <p>Logo de WithLove</p>
+            <p>WithLove</p>
 
             <ul className="menu-header">
                 <li><a>Inicio</a></li>

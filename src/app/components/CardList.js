@@ -23,9 +23,9 @@ const CardList = () => {
     },
     {
       id: 3,
-      titulo: "Ambientes personalizados",
+      titulo: "Arma tu paquete",
       descripcion:
-        "Transforma cualquier lugar en un espacio único, adaptado a tus preferencias.",
+        "Explora las opciones y crea un paquete segun tus preferencias",
       imagen: "",
       color: "#fff8c5",
       icon:faHandshakeSimple
