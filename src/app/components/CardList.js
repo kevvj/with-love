@@ -2,7 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
 import { faGift } from "@fortawesome/free-solid-svg-icons";
 import { faHandshakeSimple } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from 'next/navigation'
 const CardList = () => {
+
+  const router = useRouter()
+
   const cardlist = [
     {
       id: 1,
@@ -57,7 +61,7 @@ const CardList = () => {
             </div>
           </div>
           <div className="button-container">
-            <button className="Button">Mas detalles</button>
+            <button className="Button" onClick={() => router.push('/complete-packages')}>Mas detalles</button>
           </div>
         </div>
       ))}
