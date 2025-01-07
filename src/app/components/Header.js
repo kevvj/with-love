@@ -4,6 +4,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,6 +16,8 @@ const Header = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
+
+        setIsClient(true)
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -31,7 +34,7 @@ const Header = () => {
                 <li><a>Galeria</a></li>
                 <li><a>Contacto</a></li>
             </ul>
-            <button className="Button">Reservar <FontAwesomeIcon icon={faStar} size="1x" color="white" /></button>
+            <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button>
 
             <div className="dropdown">
             <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="white"></FontAwesomeIcon></button>
