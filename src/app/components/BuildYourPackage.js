@@ -1,12 +1,14 @@
 import { useState } from "react"
 const BuildYourPackage = () => {
     const [quantities, setQuantities] = useState({})
+    const [total, setTotal] = useState(0)
+
     const SelectableItems = [
-        { id: 1, name: "Globos", price: "1.000$" },
-        { id: 2, name: "Guirnaldas", price: "2.000$" },
-        { id: 3, name: "Centros de Mesa", price: "3.000$" },
-        { id: 4, name: "Piñata", price: "5.000$" },
-        { id: 5, name: "Mantel Decorativo", price: "4.000$" },
+        { id: 1, name: "Globos", price: 1000 },
+        { id: 2, name: "Guirnaldas", price: 2000 },
+        { id: 3, name: "Centros de Mesa", price: 3000 },
+        { id: 4, name: "Piñata", price: 5000 },
+        { id: 5, name: "Mantel Decorativo", price: 4000 },
     ]
 
     const handleQuantityChange = (id, event) => {
@@ -23,6 +25,14 @@ const BuildYourPackage = () => {
             ...prevQuantities,
             [id]: newQuantity,
         }))
+
+        const item = SelectableItems.find((items) => items.id === id)
+
+        setTotal(total + (item.price * newQuantity))
+    }
+
+    const handleCheckBox = () =>{
+        setTotal(total + 20000)
     }
 
     return (
@@ -44,10 +54,10 @@ const BuildYourPackage = () => {
                 )}
 
                 <div className="byp-checkbox">
-                    <input type="checkbox" /><p> Tema personalizado</p>
+                    <input onChange={handleCheckBox} type="checkbox" /><p> Tema personalizado</p>
                 </div>
 
-                <h2>Precio Total: </h2>
+                <h2>Precio Total: {total}</h2>
 
                 <button className="Button">Solicitar presupuesto</button>
             </div>
