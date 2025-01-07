@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    padding: 5px 50px;
+    padding: 15px 50px;
     border-radius: 5px;
     align-items: center;
     justify-content: space-between;
@@ -23,6 +23,7 @@
     background: #F8BBD0;
     z-index: -1;
     transition: background 1s ease, opacity 0.5s ease;
+    
 }
 
 .header.scrolled::before {
@@ -40,8 +41,6 @@
     display: flex;
     list-style: none;
     gap: 35px;
-    margin: 0;
-    padding: 0;
 }
 
 .header p {
@@ -60,6 +59,7 @@
 .header a {
     font-size: 1rem;
 }
+
 
 .order-button {
     background: #81D4FA;
@@ -89,6 +89,8 @@
 
     .menu-header {
         display: none;
+        padding: 0;
+        margin: 0;
     }
 
     .header ul li {

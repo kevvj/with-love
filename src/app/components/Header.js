@@ -31,7 +31,7 @@ const Header = () => {
                 <li><a>Galeria</a></li>
                 <li><a>Contacto</a></li>
             </ul>
-            <button className="order-button">Reservar <FontAwesomeIcon icon={faStar} size="1x" color="white" /></button>
+            <button className="Button">Reservar <FontAwesomeIcon icon={faStar} size="1x" color="white" /></button>
 
             <div className="dropdown">
             <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="white"></FontAwesomeIcon></button>

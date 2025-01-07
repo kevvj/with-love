@@ -7,6 +7,7 @@
 @import "./css/Map.css";
 @import "./css/WhatsappButton.css";
 @import "./css/ProfilCard.css";
+@import "./css/BuildYourPackage.css";
 
 /*Aqui van los globals, es decir, los diseños generales de toda la pagina*/
 * {
@@ -32,9 +33,19 @@ button {
 }
 
 .Button {
-  background: #e46060;
+  background: #2b99ff;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: pointer;
   color: white;
+  width: fit-content;
+  transition: transform 0.3s ease;
+}
+
+.Button:hover{
+  transform: scale(1.1);
+}
+h1,h2,h3,h4,p,a{
+  padding: 0;
+  margin: 0;
 }
