@@ -1,7 +1,15 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faStar } from "@fortawesome/free-solid-svg-icons"
 const BuildYourPackage = () => {
     const [quantities, setQuantities] = useState({})
     const [total, setTotal] = useState(0)
+    const [isClient, setIsClient] = useState(false)
+    const [isCustomTheme, setIsCustomThem] = useState(false)
+
+    useEffect(() => {
+        setIsClient(true)
+    }, [])
 
     const SelectableItems = [
         { id: 1, name: "Globos", price: 1000 },
@@ -21,18 +29,33 @@ const BuildYourPackage = () => {
             newQuantity = 0
         }
 
+        const item = SelectableItems.find((items) => items.id === id)
+
+        if (quantities[id] > newQuantity) {
+            setTotal(total - (item.price * ((quantities[id] || 0) - newQuantity)))
+
+        } else {
+
+            console.log(quantities[id])
+
+
+            setTotal(total + (item.price * (newQuantity - (quantities[id] || 0))))
+        }
+
         setQuantities((prevQuantities) => ({
             ...prevQuantities,
             [id]: newQuantity,
         }))
-
-        const item = SelectableItems.find((items) => items.id === id)
-
-        setTotal(total + (item.price * newQuantity))
     }
 
-    const handleCheckBox = () =>{
-        setTotal(total + 20000)
+    const handleCheckBox = () => {
+        if (isCustomTheme) {
+            setTotal(total - 20000)
+            setIsCustomThem(false)
+        } else {
+            setTotal(total + 20000)
+            setIsCustomThem(true)
+        }
     }
 
     return (
@@ -45,6 +68,7 @@ const BuildYourPackage = () => {
                     <div key={items.id} className="byp-content">
 
                         <div className="byp-description">
+                            {isClient && <FontAwesomeIcon icon={faStar} color="rgb(255, 0, 64)"></FontAwesomeIcon>}
                             <p>{items.name}</p>
                             <span>({items.price} c/u)</span>
                         </div>
