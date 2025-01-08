@@ -1,16 +1,16 @@
-.byp-container{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   width: 100%;
+.byp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
-.byp-container h1{
+.byp-container h1 {
     font-size: 2rem;
 }
 
-.byp{
+.byp {
     border: 1px solid #ccc;
     width: 50%;
     padding: 30px;
@@ -19,33 +19,33 @@
     gap: 20px;
 }
 
-.byp h2{
+.byp h2 {
     font-size: 1.5rem;
     font-weight: 500;
 }
-.byp-content{
+
+.byp-content {
     display: flex;
     justify-content: space-between;
 }
-.byp-description{
+
+.byp-description {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.byp-content input{
+
+.byp-content input {
     width: 40px;
     border-radius: 5px;
     border: 2px solid #ccc;
     padding: 5px 10px;
 }
 
-.byp-checkbox{
+.byp-checkbox {
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.byp-checkbox input{
-    padding: 0;
-    margin: 0;
-}
+

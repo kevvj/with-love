@@ -15,7 +15,8 @@ const CardList = () => {
         "Explora nuestros paquetes de decoración listos para usar.",
       imagen: "",
       color: "#ffd1dc",
-      icon:faCalendarCheck
+      icon:faCalendarCheck,
+      rute:"/complete-packages"
     },
     {
       id: 2,
@@ -23,7 +24,8 @@ const CardList = () => {
       descripcion: "Explora nuestras decoraciones únicas para cada ocasión.",
       imagen: "",
       color: "#cde8fb",
-      icon:faGift
+      icon:faGift,
+      rute:"/"
     },
     {
       id: 3,
@@ -32,7 +34,8 @@ const CardList = () => {
         "Explora las opciones y crea un paquete segun tus preferencias",
       imagen: "",
       color: "#fff8c5",
-      icon:faHandshakeSimple
+      icon:faHandshakeSimple,
+      rute:"/make-it-yours"
     },
   ];
 
@@ -61,7 +64,7 @@ const CardList = () => {
             </div>
           </div>
           <div className="button-container">
-            <button className="Button" onClick={() => router.push('/complete-packages')}>Mas detalles</button>
+            <button className="Button" onClick={() => router.push(cardlist.rute)}>Mas detalles</button>
           </div>
         </div>
       ))}
