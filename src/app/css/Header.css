@@ -20,14 +20,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #F8BBD0;
+    background: #d78080;
     z-index: -1;
     transition: background 1s ease, opacity 0.5s ease;
     
 }
 
 .header.scrolled::before {
-    background:#f3b6b6;
+    background:#ea9d9d;
     opacity: 0.8;
     backdrop-filter: blur(5px);
 }
