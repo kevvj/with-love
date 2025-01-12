@@ -2,9 +2,12 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from 'next/navigation'
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isClient, setIsClient] = useState(false);
+
+    const router = useRouter()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,10 +29,14 @@ const Header = () => {
 
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
-            <p>WithLove</p>
+            <div className="logo-img-container">
+                <img src="/Logoimg.png" className="logo-img"></img>
+                <img src="/LogoNombre.png" className="logo-name"></img>
+            </div>
+
 
             <ul className="menu-header">
-                <li><a>Inicio</a></li>
+                <li><a onClick={() => router.push("/")}>Inicio</a></li>
                 <li><a>Servicios</a></li>
                 <li><a>Galeria</a></li>
                 <li><a>Contacto</a></li>
@@ -37,15 +44,15 @@ const Header = () => {
             <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button>
 
             <div className="dropdown">
-            <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="white"></FontAwesomeIcon></button>
-            <ul>
-                <li><a>Inicio</a></li>
-                <li><a>Servicios</a></li>
-                <li><a>Galeria</a></li>
-                <li><a>Contacto</a></li>
-            </ul>
+                <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="white"></FontAwesomeIcon></button>
+                <ul>
+                    <li><a onClick={() => router.push("/")}>Inicio</a></li>
+                    <li><a>Servicios</a></li>
+                    <li><a>Galeria</a></li>
+                    <li><a>Contacto</a></li>
+                </ul>
             </div>
-        
+
         </header>
     )
 }

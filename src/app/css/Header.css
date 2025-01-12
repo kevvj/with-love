@@ -3,14 +3,13 @@
     padding: 15px 50px;
     border-radius: 5px;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     transition: color 0.3s ease;
-    color: white;
 }
 
 .header::before {
@@ -20,14 +19,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #d78080;
     z-index: -1;
     transition: background 1s ease, opacity 0.5s ease;
     
 }
 
 .header.scrolled::before {
-    background:#ea9d9d;
+    background-color: rgb(246, 246, 246);
     opacity: 0.8;
     backdrop-filter: blur(5px);
 }
@@ -37,10 +35,26 @@
     height: 85px;
 }
 
+.logo-name{
+    width: 200px;
+}
+
+.logo-img{
+    width: 50px;
+}
+
+.logo-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu-header {
     display: flex;
     list-style: none;
     gap: 35px;
+    padding: 0;
+    margin: 0;
 }
 
 .header p {
@@ -60,13 +74,8 @@
     font-size: 1rem;
 }
 
-
-.order-button {
-    background: #81D4FA;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+.header button{
+    margin: 0 0 0 40px;
 }
 
 .order-button:hover {
