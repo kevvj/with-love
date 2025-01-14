@@ -12,7 +12,7 @@ const CardList = () => {
       id: 1,
       titulo: "Paquetes completos",
       descripcion:
-        "Explora nuestros paquetes de decoración listos para usar.",
+        "Paquetes de decoración listos para usar.",
       imagen: "",
       color: "#ffd1dc",
       icon:faCalendarCheck,
@@ -21,7 +21,7 @@ const CardList = () => {
     {
       id: 2,
       titulo: "Decoraciones temáticas",
-      descripcion: "Explora nuestras decoraciones únicas para cada ocasión.",
+      descripcion: "Decoraciones únicas para cada ocasión.",
       imagen: "",
       color: "#cde8fb",
       icon:faGift,
@@ -31,12 +31,22 @@ const CardList = () => {
       id: 3,
       titulo: "Arma tu paquete",
       descripcion:
-        "Explora las opciones y crea un paquete segun tus preferencias",
+        "Crea un paquete segun tus preferencias",
       imagen: "",
       color: "#fff8c5",
       icon:faHandshakeSimple,
       rute:"/make-it-yours"
     },
+
+    {
+      id:4,
+      titulo: "Alquiler",
+      descripcion: "Descubre nuestra increíble colección de artículos de decoración",
+      imagen: "",
+      color: "#87ceeb",
+      icon:faHandshakeSimple,
+      rute:"/"
+    }
   ];
 
   return (
