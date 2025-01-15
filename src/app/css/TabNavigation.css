@@ -1,0 +1,17 @@
+.tabs-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.tabs-container button{
+    color: black;
+    background-color: transparent;
+    font-size: 1.3rem;
+}
+
+.Button-check{
+    padding: 10px;
+    color: #fc47ff !important; 
+}

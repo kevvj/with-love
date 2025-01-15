@@ -8,6 +8,7 @@
 @import "./css/WhatsappButton.css";
 @import "./css/ProfilCard.css";
 @import "./css/BuildYourPackage.css";
+@import "./css/TabNavigation.css";
 
 /*Aqui van los globals, es decir, los diseños generales de toda la pagina*/
 * {
