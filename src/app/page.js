@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Map from "./components/Map"
 import WhatsappButton from "./components/WhatsappButton";
 import ProfileCard from "./components/ProfileCard";
+import Gallery from "./components/Gallery";
 export default function Home() {
 
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Map></Map>
       <Footer></Footer>
       <WhatsappButton></WhatsappButton>
+      <Gallery></Gallery>
+
     </>
   )
 }

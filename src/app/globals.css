@@ -9,6 +9,7 @@
 @import "./css/ProfilCard.css";
 @import "./css/BuildYourPackage.css";
 @import "./css/TabNavigation.css";
+@import "./css/Gallery.css";
 
 /*Aqui van los globals, es decir, los diseños generales de toda la pagina*/
 * {
