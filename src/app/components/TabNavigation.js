@@ -26,21 +26,26 @@ const TabNavigation = () => {
 
         switch (check.id) {
             case 1:
-                result = [{ id: 1, name: "Sillas", icon: faChair, price: 15000 },
-                { id: 2, name: "Mesas", icon: faTable, price: 20000 },
-                { id: 3, name: "Puelco", icon: faHorse, price: 10000 }]
+                result = [{ id: 1, name: "Sillas", icon: faChair, price: 15000, img: "/Profile.jpeg" },
+                { id: 2, name: "Mesas", icon: faTable, price: 20000, img: "/Profile.jpeg" },
+                { id: 3, name: "Puelco", icon: faHorse, price: 10000, img: "/Profile.jpeg" }]
                 break
 
             case 2:
-                result = [{ id: 1, name: "Confeti", icon: faWandSparkles, price: 12000 },
-                { id: 2, name: "Globos", icon: faBomb, price: 8000 },
-                { id: 3, name: "Puelco", icon: faHorse, price: 10000 }]
+                result = [{ id: 1, name: "Aro dorado", icon: faWandSparkles, price: 12000, img: "/aro-dorado.png" },
+                { id: 2, name: "Kit de fiesta 1", icon: faBomb, price: 8000, img: "/kit-deco-deformita.jpeg" },
+                { id: 3, name: "Kit de fiesta 2", icon: faHorse, price: 10000, img: "/Kitfiesta2.jpeg" }, 
+                { id: 4, name: "Numero neon", icon: faHorse, price: 10000, img: "/Decoracion-Neon-vintage-.jpeg" },
+                { id: 5, name: "Explosión de Colores", icon: faHorse, price: 10000, img: "/ExplosionColor.jpg" },
+                { id: 6, name: "Party Spark", icon: faHorse, price: 10000, img: "/partyspark.webp" },
+                { id: 7, name: "Energía Pop", icon: faHorse, price: 10000, img: "/popenergy.jpg" },
+                { id: 8, name: "Arcoiris de Papel", icon: faHorse, price: 10000, img: "/Arcoiris.jpg" }]
                 break
 
             case 3:
-                result = [{ id: 1, name: "Parlante", icon: faMusic, price: 10000 },
-                { id: 2, name: "Actividades", icon: faClipboardListÑ, price: 20000 },
-                { id: 3, name: "Puelco", icon: faHorse, price: 10000 }]
+                result = [{ id: 1, name: "Parlante", icon: faMusic, price: 10000, img: "/Profile.jpeg" },
+                { id: 2, name: "Actividades", icon: faClipboardList, price: 20000, img: "/Profile.jpeg" },
+                { id: 3, name: "Puelco", icon: faHorse, price: 10000, img: "/Profile.jpeg" }]
                 break
         }
 
@@ -52,15 +57,11 @@ const TabNavigation = () => {
                     forn.map((item) => (
                         <div key={item.id} className="forniture">
 
+                            <img src={item.img}></img>
                             <div className="forniture-description">
-                                <FontAwesomeIcon icon={item.icon}></FontAwesomeIcon>
                                 <h2>{item.name}</h2>
                                 <p>{item.price} $</p>
                             </div>
-
-
-                            <button className="Button">Agregar</button>
-
                         </div>
                     ))
                 }
