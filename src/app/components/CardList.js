@@ -45,7 +45,7 @@ const CardList = () => {
       imagen: "",
       color: "#87ceeb",
       icon:faHandshakeSimple,
-      rute:"/"
+      rute:"/rent"
     }
   ];
 

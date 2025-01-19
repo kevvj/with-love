@@ -1,0 +1,19 @@
+.forniture-container {
+    display: flex;
+    padding:  50px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.forniture {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 30px 45px;
+    justify-content: space-between;
+}
+
+.forniture-description{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
