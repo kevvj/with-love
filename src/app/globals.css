@@ -9,7 +9,11 @@
 @import "./css/ProfilCard.css";
 @import "./css/BuildYourPackage.css";
 @import "./css/TabNavigation.css";
+<<<<<<< Updated upstream
 @import "./css/Gallery.css";
+=======
+@import "./css/RentDetails.css";
+>>>>>>> Stashed changes
 
 /*Aqui van los globals, es decir, los diseños generales de toda la pagina*/
 * {
