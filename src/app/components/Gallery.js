@@ -14,67 +14,67 @@ const Gallery = () => {
       <div className="gallery-decorations">
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
         <div className="gallery-item">
           <div className="gallery-image"></div>
-          <p className="gallery-text">XD</p>
+          <p className="gallery-text">Titulo</p>
         </div>
     
       </div>
