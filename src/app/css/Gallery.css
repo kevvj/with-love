@@ -1,12 +1,11 @@
 
 .gallery-container {
-    padding: 100px;
     font-family: Arial, sans-serif;
     display: flex; 
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-    height: 100vh; 
+    padding: 20px;
 }
 
 
@@ -19,7 +18,7 @@
 
 .gallery-decorations {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     column-gap: 30px; 
     justify-items: center; 

@@ -39,7 +39,7 @@ const Header = () => {
             <ul className="menu-header">
                 <li><a onClick={() => router.push("/")}>Inicio</a></li>
                 <li><a>Servicios</a></li>
-                <li><a>Galeria</a></li>
+                <li><a onClick={() => router.push("/gallery")}>Galeria</a></li>
                 <li><a>Contacto</a></li>
             </ul>
 
@@ -51,7 +51,7 @@ const Header = () => {
                 <ul>
                     <li><a onClick={() => router.push("/")}>Inicio</a></li>
                     <li><a>Servicios</a></li>
-                    <li><a>Galeria</a></li>
+                    <li><a onClick={() => router.push("/gallery")}>Galeria</a></li>
                     <li><a>Contacto</a></li>
                 </ul>
             </div>
