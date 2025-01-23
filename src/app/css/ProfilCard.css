@@ -58,4 +58,9 @@
     .profile-description{
         padding: 10px;
     }
+
+    .profile-picture{
+        width: 150px;
+        height: 150px;
+    }
 }

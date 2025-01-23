@@ -25,7 +25,7 @@ const CardList = () => {
       imagen: "",
       color: "#cde8fb",
       icon:faGift,
-      rute:"/"
+      rute:"/theme-decorations"
     },
     {
       id: 3,
