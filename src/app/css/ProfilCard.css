@@ -7,6 +7,8 @@
 }
 .profile-picture{
     width: 200px;
+    height: 200px;
+    display: block;
 }
 
 .profile-description{
@@ -40,4 +42,20 @@
     font-size: 1.3rem;
     color: #bd0094;
     font-weight: bold;
+}
+
+@media(max-width: 700px){
+    .profile-card-container{
+        padding: 0;
+    }
+
+    .profile-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-description{
+        padding: 10px;
+    }
 }

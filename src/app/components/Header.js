@@ -47,7 +47,7 @@ const Header = () => {
 
 
             <div className="dropdown">
-                <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="white"></FontAwesomeIcon></button>
+                <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="black"></FontAwesomeIcon></button>
                 <ul>
                     <li><a onClick={() => router.push("/")}>Inicio</a></li>
                     <li><a>Servicios</a></li>
