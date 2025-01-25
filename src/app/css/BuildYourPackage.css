@@ -49,3 +49,9 @@
     align-items: center;
 }
 
+@media(max-width: 700px){
+    .byp{
+        width: 90%;
+        margin-top: 50px;
+    }
+}
