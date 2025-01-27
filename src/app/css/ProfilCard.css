@@ -57,11 +57,29 @@
     }
 
     .profile-description{
-        padding: 10px;
+        padding: 20px;
     }
 
     .profile-picture{
-        width: 150px;
-        height: 150px;
+        width: 300px;
+    }
+
+    .profile-description h2{
+        font-size: 1.8rem;
+        color: #42b8ef;
+        margin: 20px 0 0;
+    }
+
+    
+    
+    .profile-description p{
+        font-size: 1rem;
+        color: #616161;
+    }
+    
+    .profile-description span{
+        font-size: 1rem;
+        color: #b82498;
+        font-weight: bold;
     }
 }
