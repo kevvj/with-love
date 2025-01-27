@@ -4,11 +4,12 @@
 
 .profile-card{
     display: flex;
+    align-items: center;
 }
 .profile-picture{
-    width: 200px;
-    height: 200px;
-    display: block;
+    width: 300px;
+    height: auto; 
+    
 }
 
 .profile-description{

@@ -32,7 +32,7 @@ const Header = () => {
 
             <div className="logo-img-container" onClick={() => router.push("/")}>
                 <img src="/Logoimg.png" className="logo-img"></img>
-                <img src="/LogoNombre.png" className="logo-name"></img>
+                {/* <img src="/LogoNombre.png" className="logo-name"></img> */}
             </div>
 
 
