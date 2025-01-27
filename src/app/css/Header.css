@@ -100,7 +100,8 @@
         position: static;
         padding: 5px 20px;
         margin-bottom: 50px;
-        background-color: #E6E6FA ;
+        background-color: #E6E6FA;
+        border-radius: 5px;
     }
 
     .menu-header {
