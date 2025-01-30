@@ -123,13 +123,11 @@
 
     .dropdown {
         display: block;
-        position: relative;
     }
 
     .dropdown ul {
         list-style: none;
         margin: 0;
-        padding: 0;
         position: absolute;
         top: 0;
         right: 0;
@@ -137,12 +135,29 @@
         border-radius: 5px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         display: none;
-        background-color: #87ceeb;
+        background-color: #53a9d8;
         padding: 10px;
+        width: 50%;
+        height: 100%;
     }
 
     .dropdown:hover ul {
-        display: block; 
+        display: flex; 
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dropdown ul li:hover{
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+    }
+
+    .dropdown ul li{
+        padding: 10px;
+       
+        color: white;
+        margin-top: 10px;
+        border-bottom: 1px solid white;
     }
 
     .dropdown-button {
