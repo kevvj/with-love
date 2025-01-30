@@ -50,8 +50,8 @@ const Header = () => {
             <div className="dropdown">
                 <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="#bd0094"></FontAwesomeIcon></button>
                 <ul>
-                    <li>
-                        <a onClick={() => router.push("/")}>Inicio</a>
+                    <li onClick={() => router.push("/")}>
+                        <a>Inicio</a>
 
                         <span>
                             <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
@@ -64,8 +64,8 @@ const Header = () => {
                             <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
                         </span>
                     </li>
-                    <li>
-                        <a onClick={() => router.push("/gallery")}>Galeria</a>
+                    <li onClick={() => router.push("/gallery")}>
+                        <a>Galeria</a>
                         <span>
                             <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
                         </span>
