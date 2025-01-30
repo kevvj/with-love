@@ -2,14 +2,14 @@
     display: flex;
     padding: 10px 50px;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
     transition: color 0.3s ease;
-    
+
 }
 
 .header::before {
@@ -22,7 +22,7 @@
     z-index: -1;
     transition: background 1s ease, opacity 0.5s ease;
     background-color: #AEDFF7;
-    
+
 }
 
 .header.scrolled::before {
@@ -36,15 +36,15 @@
     height: 85px;
 }
 
-.logo-name{
+.logo-name {
     width: 200px;
 }
 
-.logo-img{
+.logo-img {
     width: 100px;
 }
 
-.logo-img-container{
+.logo-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,8 @@
 .menu-header {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Fija el centro */
+    transform: translateX(-50%);
+    /* Fija el centro */
     display: flex;
     list-style: none;
     gap: 35px;
@@ -72,7 +73,7 @@
     transition: color 0.3s ease;
 }
 
-.header ul li:hover{
+.header ul li:hover {
     color: #ff0808;
 }
 
@@ -80,7 +81,7 @@
     font-size: 1rem;
 }
 
-.header button{
+.header button {
     flex: 0;
     white-space: nowrap;
 }
@@ -103,7 +104,8 @@
         background-color: #E6E6FA;
         border-radius: 5px;
     }
-    .logo-img{
+
+    .logo-img {
         width: 80px;
     }
 
@@ -141,17 +143,21 @@
     }
 
     .dropdown:hover ul {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         gap: 20px;
+
+        opacity: 0;
+        transform: translateX(200%);
+        animation: aparecer .5s ease-out forwards;
     }
 
-    .dropdown ul li:hover{
+    .dropdown ul li:hover {
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
     }
 
-    .dropdown ul li{
+    .dropdown ul li {
         padding: 10px;
         color: white;
         margin-top: 10px;
@@ -167,7 +173,7 @@
     }
 
     .header.scrolled::before {
-        
+
         position: static;
         opacity: 1;
         backdrop-filter: none;
@@ -183,10 +189,22 @@
         position: static;
     }
 
-    .header .Button{
+    .header .Button {
         display: none;
     }
 
-    
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateX(200%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
 
 }
