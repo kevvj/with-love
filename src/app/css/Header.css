@@ -153,10 +153,12 @@
 
     .dropdown ul li{
         padding: 10px;
-       
         color: white;
         margin-top: 10px;
         border-bottom: 1px solid white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .dropdown-button {

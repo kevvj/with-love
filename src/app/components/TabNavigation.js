@@ -26,9 +26,9 @@ const TabNavigation = () => {
 
         switch (check.id) {
             case 1:
-                result = [{ id: 1, name: "Sillas", icon: faChair, price: 15000, img: "/Profile.jpeg" },
-                { id: 2, name: "Mesas", icon: faTable, price: 20000, img: "/Profile.jpeg" },
-                { id: 3, name: "Puelco", icon: faHorse, price: 10000, img: "/Profile.jpeg" }]
+                result = [{ id: 1, name: "Sillas", icon: faChair, price: 15000, img: "/sillas.jpg" },
+                { id: 2, name: "Mesas", icon: faTable, price: 20000, img: "/mesas.jpg" },
+                { id: 3, name: "Puelco", icon: faHorse, price: 10000, img: "/puelco.jpg" }]
                 break
 
             case 2:
@@ -43,9 +43,9 @@ const TabNavigation = () => {
                 break
 
             case 3:
-                result = [{ id: 1, name: "Parlante", icon: faMusic, price: 10000, img: "/Profile.jpeg" },
-                { id: 2, name: "Actividades", icon: faClipboardList, price: 20000, img: "/Profile.jpeg" },
-                { id: 3, name: "Puelco", icon: faHorse, price: 10000, img: "/Profile.jpeg" }]
+                result = [{ id: 1, name: "Parlante", icon: faMusic, price: 10000, img: "/parlante.jpg" },
+                { id: 2, name: "Actividades", icon: faClipboardList, price: 20000, img: "/Disfraces-y-deporte.jpg" },
+                { id: 3, name: "Puelco", icon: faHorse, price: 10000, img: "/puelco.jpg" }]
                 break
         }
 
