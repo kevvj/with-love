@@ -41,7 +41,7 @@ const Header = () => {
                 <li><a onClick={() => router.push("/")}>Inicio</a></li>
                 <li><a>Servicios</a></li>
                 <li><a onClick={() => router.push("/gallery")}>Galeria</a></li>
-                <li><a>Contacto</a></li>
+                <li><a onClick={() => router.push("/contact")}>Contacto</a></li>
             </ul>
 
             <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button>
@@ -70,7 +70,7 @@ const Header = () => {
                             <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
                         </span>
                     </li>
-                    <li>
+                    <li onClick={() => router.push("/contact")}>
                         <a>Contacto</a>
                         <span>
                             <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
