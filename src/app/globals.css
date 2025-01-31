@@ -12,7 +12,14 @@
 @import "./css/RentDetails.css";
 @import "./css/Gallery.css";
 @import "./css/ContactArea.css";
+@import "./css/MainNav.css";
 
+:root {
+  --blue-color: #64d5ff;
+  --rose-color: #ffa1d2;
+  --purple-color: #a767db;
+  --green-color: #c1ff72;
+}
 
 /*Aqui van los globals, es decir, los diseños generales de toda la pagina*/
 * {

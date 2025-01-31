@@ -7,14 +7,16 @@ import Map from "./components/Map"
 import WhatsappButton from "./components/WhatsappButton";
 import ProfileCard from "./components/ProfileCard";
 import Gallery from "./components/Gallery";
+import MainNav from "./components/MainNav";
 export default function Home() {
 
   return (
     <>
       <Header />
       <div className="header-spacer"></div>
-      <ProfileCard></ProfileCard>
+      <MainNav></MainNav>
       <CardList />
+      <ProfileCard></ProfileCard>
       <ContactSection></ContactSection>
       <Map></Map>
       <Footer></Footer>

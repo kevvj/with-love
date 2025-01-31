@@ -14,7 +14,7 @@ const CardList = () => {
       descripcion:
         "Paquetes de decoración listos para usar.",
       imagen: "",
-      color: "#ffd1dc",
+      color: "#64d5ff",
       icon:faCalendarCheck,
       rute:"/complete-packages"
     },
@@ -23,7 +23,7 @@ const CardList = () => {
       titulo: "Decoraciones temáticas",
       descripcion: "Decoraciones únicas para cada ocasión.",
       imagen: "",
-      color: "#cde8fb",
+      color: "#ffa1d2",
       icon:faGift,
       rute:"/theme-decorations"
     },
@@ -33,7 +33,7 @@ const CardList = () => {
       descripcion:
         "Crea un paquete segun tus preferencias",
       imagen: "",
-      color: "#fff8c5",
+      color: "#a767db",
       icon:faHandshakeSimple,
       rute:"/make-it-yours"
     },
@@ -43,7 +43,7 @@ const CardList = () => {
       titulo: "Alquiler",
       descripcion: "Descubre nuestra increíble colección de artículos de decoración",
       imagen: "",
-      color: "#87ceeb",
+      color: "#c1ff72",
       icon:faHandshakeSimple,
       rute:"/rent"
     }
