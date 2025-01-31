@@ -1,0 +1,32 @@
+.forniture-container {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.forniture {
+   
+}
+
+.forniture img{
+    width: 300px;
+}
+
+.forniture-description{
+    
+}
+
+@media(max-width:700px){
+    .forniture-container{
+        gap: 20px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .forniture img{
+        width: 100%;
+    }
+}

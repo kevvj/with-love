@@ -6,19 +6,23 @@ import Footer from "./components/Footer";
 import Map from "./components/Map"
 import WhatsappButton from "./components/WhatsappButton";
 import ProfileCard from "./components/ProfileCard";
+import Gallery from "./components/Gallery";
+import MainNav from "./components/MainNav";
 export default function Home() {
 
   return (
     <>
       <Header />
       <div className="header-spacer"></div>
+      <MainNav></MainNav>
+      <CardList />
       <ProfileCard></ProfileCard>
-      <CardList/>
       <ContactSection></ContactSection>
-      
       <Map></Map>
       <Footer></Footer>
       <WhatsappButton></WhatsappButton>
+
+
     </>
   )
 }

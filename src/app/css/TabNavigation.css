@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-top: 30px;
 }
 .tabs-container button{
     color: black;
@@ -14,4 +15,11 @@
 .Button-check{
     padding: 10px;
     color: #fc47ff !important; 
+}
+
+@media(max-width:700px){
+    .tabs-container{
+        gap: 0;
+        flex-direction: column;
+    }
 }

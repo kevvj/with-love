@@ -4,9 +4,12 @@
 
 .profile-card{
     display: flex;
+    align-items: center;
 }
 .profile-picture{
-    width: 200px;
+    width: 300px;
+    height: auto; 
+    
 }
 
 .profile-description{
@@ -28,7 +31,7 @@
 
 .profile-description h2{
     font-size: 2.3rem;
-    color: #81D4FA;
+    color: var(--blue-color);
 }
 
 .profile-description p{
@@ -38,6 +41,42 @@
 
 .profile-description span{
     font-size: 1.3rem;
-    color: #bd0094;
+    color: var(--rose-color);
     font-weight: bold;
+}
+
+@media(max-width: 700px){
+    .profile-card-container{
+        padding: 0;
+    }
+
+    .profile-card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-description{
+        padding: 20px;
+    }
+
+    .profile-picture{
+        width: 300px;
+    }
+
+    .profile-description h2{
+        font-size: 1.8rem;
+        margin: 20px 0 0;
+    }
+
+    
+    
+    .profile-description p{
+        font-size: 1rem;
+    }
+    
+    .profile-description span{
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }

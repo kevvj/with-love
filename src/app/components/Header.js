@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/navigation'
+import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isClient, setIsClient] = useState(false);
@@ -29,27 +30,52 @@ const Header = () => {
 
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+
             <div className="logo-img-container" onClick={() => router.push("/")}>
                 <img src="/Logoimg.png" className="logo-img"></img>
-                <img src="/LogoNombre.png" className="logo-name"></img>
+                {/* <img src="/LogoNombre.png" className="logo-name"></img> */}
             </div>
 
 
             <ul className="menu-header">
                 <li><a onClick={() => router.push("/")}>Inicio</a></li>
                 <li><a>Servicios</a></li>
-                <li><a>Galeria</a></li>
-                <li><a>Contacto</a></li>
+                <li><a onClick={() => router.push("/gallery")}>Galeria</a></li>
+                <li><a onClick={() => router.push("/contact")}>Contacto</a></li>
             </ul>
+
             <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button>
 
+
             <div className="dropdown">
-                <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="white"></FontAwesomeIcon></button>
+                <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="#bd0094"></FontAwesomeIcon></button>
                 <ul>
-                    <li><a onClick={() => router.push("/")}>Inicio</a></li>
-                    <li><a>Servicios</a></li>
-                    <li><a>Galeria</a></li>
-                    <li><a>Contacto</a></li>
+                    <li onClick={() => router.push("/")}>
+                        <a>Inicio</a>
+
+                        <span>
+                            <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                        </span>
+
+                    </li>
+                    <li>
+                        <a>Servicios</a>
+                        <span>
+                            <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                        </span>
+                    </li>
+                    <li onClick={() => router.push("/gallery")}>
+                        <a>Galeria</a>
+                        <span>
+                            <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                        </span>
+                    </li>
+                    <li onClick={() => router.push("/contact")}>
+                        <a>Contacto</a>
+                        <span>
+                            <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                        </span>
+                    </li>
                 </ul>
             </div>
 
