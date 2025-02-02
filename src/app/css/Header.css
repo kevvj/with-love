@@ -202,6 +202,10 @@
         display: none;
     }
 
+    .header-social-media{
+        display: none;
+    }
+
     @keyframes aparecer {
         from {
             opacity: 0;
