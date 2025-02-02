@@ -93,6 +93,16 @@
     display: none;
 }
 
+.header-social-media{
+    display: flex;
+    gap: 40px;
+}
+
+.header-social-media a{
+    all: unset;
+    cursor: pointer;
+}
+
 @media(max-width: 700px) {
     .header {
         justify-content: space-between;
