@@ -28,6 +28,7 @@
     gap: 20px;
 }
 
+
 .main-nav-list{
     width: 400px;
     height: 120px;
@@ -36,6 +37,13 @@
     justify-content: center;
     align-items: center;
     color: white;
+    transition: transform .3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.main-nav-list:hover{
+    transform: scale(1.05);
 }
 
 .main-nav-list h2{
