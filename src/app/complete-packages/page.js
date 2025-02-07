@@ -7,10 +7,14 @@ export default function Home() {
 
   return (
     <>
+<<<<<<< Updated upstream
       <Header></Header>
       <div className="header-spacer"></div>
 
       <CompletPackages></CompletPackages>
+=======
+    <Header></Header>
+>>>>>>> Stashed changes
     </>
 
   )
