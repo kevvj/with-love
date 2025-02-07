@@ -102,3 +102,10 @@ input[type="checkbox"]:checked::after {
   left: 2px;
   top: -2px;
 }
+
+.map-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}

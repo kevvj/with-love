@@ -3,17 +3,11 @@
     padding: 10px 50px;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
     transition: color 0.3s ease;
-
 }
-
-
-
 
 .header-spacer {
     height: 85px;

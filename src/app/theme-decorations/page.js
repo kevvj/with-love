@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="header-spacer"></div>
     </>
   )
 }

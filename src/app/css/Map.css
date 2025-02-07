@@ -1,8 +1,5 @@
 .map-container{
-width: 100%;
-align-items: center;
-justify-content: center;
-display: flex;
+    display: flex;
 }
 
 .map{
@@ -15,7 +12,6 @@ display: flex;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
-    padding: 80px;
 }
 
 .iframe-map{

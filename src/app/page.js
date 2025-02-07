@@ -13,12 +13,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="header-spacer"></div>
       <MainNav></MainNav>
       <CardList />
       <ProfileCard></ProfileCard>
-      <ContactSection></ContactSection>
-      <Map></Map>
+
+      <div className="map-contact">
+        <Map></Map>
+        <ContactSection></ContactSection>
+      </div>
       <Footer></Footer>
       <WhatsappButton></WhatsappButton>
 
