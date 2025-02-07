@@ -4,6 +4,9 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from 'next/navigation'
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isClient, setIsClient] = useState(false);
@@ -28,6 +31,7 @@ const Header = () => {
         }
     }, [])
 
+
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
 
@@ -36,16 +40,23 @@ const Header = () => {
                 {/* <img src="/LogoNombre.png" className="logo-name"></img> */}
             </div>
 
+            <div className="header-bar">
 
-            <ul className="menu-header">
-                <li><a onClick={() => router.push("/")}>Inicio</a></li>
-                <li><a>Servicios</a></li>
-                <li><a onClick={() => router.push("/gallery")}>Galeria</a></li>
-                <li><a onClick={() => router.push("/contact")}>Contacto</a></li>
-            </ul>
+                <ul className="menu-header">
+                    <li><a onClick={() => router.push("/")}>Inicio</a></li>
+                    <li><a>Servicios</a></li>
+                    <li><a onClick={() => router.push("/gallery")}>Galeria</a></li>
+                    <li><a onClick={() => router.push("/contact")}>Contacto</a></li>
+                </ul>
 
-            <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button>
+                {/* <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button> */}
 
+                <div className="header-social-media">
+                    <a href="https://www.instagram.com/decoraciondeeventoswithlove/"><FontAwesomeIcon icon={faInstagram} size="2x" color="black"></FontAwesomeIcon></a>
+                    <a href="https://www.facebook.com/creatividadwithlove?mibextid=ZbWKwL" ><FontAwesomeIcon icon={faFacebook} size="2x" color="black"></FontAwesomeIcon></a>
+                    <a href="https://wa.me/+573216301533"><FontAwesomeIcon icon={faWhatsapp} size="2x" color="black"></FontAwesomeIcon></a>
+                </div>
+            </div>
 
             <div className="dropdown">
                 <button className="dropdown-button"><FontAwesomeIcon icon={faBars} size="2x" color="#bd0094"></FontAwesomeIcon></button>
