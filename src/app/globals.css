@@ -109,3 +109,9 @@ input[type="checkbox"]:checked::after {
   justify-content: center;
   gap: 100px;
 }
+
+@media(max-width: 700px) {
+  .map-contact{
+    flex-direction: column;
+  }
+}

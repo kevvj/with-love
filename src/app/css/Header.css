@@ -3,9 +3,6 @@
     padding: 10px 50px;
     align-items: center;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
     transition: color 0.3s ease;
 }
 
@@ -76,12 +73,14 @@
 }
 
 .header-bar {
-    background-color: var(--blue-color);
+    background-color: var(--rose-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
     padding: 7px 20px;
+    border-radius: 10px;
+    color: white;
 }
 
 @media(max-width: 700px) {

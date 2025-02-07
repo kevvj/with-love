@@ -52,9 +52,9 @@ const Header = () => {
                 {/* <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button> */}
 
                 <div className="header-social-media">
-                    <a href="https://www.instagram.com/decoraciondeeventoswithlove/"><FontAwesomeIcon icon={faInstagram} size="2x" color="black"></FontAwesomeIcon></a>
-                    <a href="https://www.facebook.com/creatividadwithlove?mibextid=ZbWKwL" ><FontAwesomeIcon icon={faFacebook} size="2x" color="black"></FontAwesomeIcon></a>
-                    <a href="https://wa.me/+573216301533"><FontAwesomeIcon icon={faWhatsapp} size="2x" color="black"></FontAwesomeIcon></a>
+                    <a href="https://www.instagram.com/decoraciondeeventoswithlove/"><FontAwesomeIcon icon={faInstagram} size="2x" color="white"></FontAwesomeIcon></a>
+                    <a href="https://www.facebook.com/creatividadwithlove?mibextid=ZbWKwL" ><FontAwesomeIcon icon={faFacebook} size="2x" color="white"></FontAwesomeIcon></a>
+                    <a href="https://wa.me/+573216301533"><FontAwesomeIcon icon={faWhatsapp} size="2x" color="white"></FontAwesomeIcon></a>
                 </div>
             </div>
 
