@@ -16,7 +16,8 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+
 }
 
 .byp h2 {
@@ -25,15 +26,18 @@
 }
 
 .byp-content {
-    display: flex;
+    display:flex;
     justify-content: space-between;
+    border: 1px solid #ccc;
+    align-items: center;
+    padding: 10px;
 }
 
 .byp-description {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 .byp-content input {
@@ -48,6 +52,58 @@
     gap: 10px;
     align-items: center;
 }
+
+.byp-content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.byp-check{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.byp-check:hover{
+    background-color: rgb(117, 35, 0);
+}
+
+.byp-section-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.byp-section-title{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+
+
+.byp-content, .no-byp-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+  
+  .byp-content {
+    opacity: 1;
+    max-height: 500px;
+  }
+  
+  .no-byp-content {
+    opacity: 0;
+    display: flex;
+    
+  }
 
 @media(max-width: 700px){
     .byp{

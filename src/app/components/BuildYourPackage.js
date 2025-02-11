@@ -1,62 +1,56 @@
 import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
+import { faCheck } from "@fortawesome/free-solid-svg-icons"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
+import { faPlus } from "@fortawesome/free-solid-svg-icons"
 const BuildYourPackage = () => {
-    const [quantities, setQuantities] = useState({})
     const [total, setTotal] = useState(0)
     const [isClient, setIsClient] = useState(false)
-    const [isCustomTheme, setIsCustomThem] = useState(false)
+    const [sections, setSections] = useState([
+        {
+            id: 1, isOpen: true
+        },
+        {
+            id: 2, isOpen: false
+        },
+        {
+            id: 3, isOpen: false
+        }
+    ])
 
     useEffect(() => {
         setIsClient(true)
     }, [])
 
     const SelectableItems = [
-        { id: 1, name: "Globos", price: 1000 },
-        { id: 2, name: "Guirnaldas", price: 2000 },
-        { id: 3, name: "Centros de Mesa", price: 3000 },
-        { id: 4, name: "Piñata", price: 5000 },
-        { id: 5, name: "Mantel Decorativo", price: 4000 },
+        { id: 1, name: "Servicio uno", price: 1000, section: 1 },
+        { id: 2, name: "Servicio dos", price: 2000, section: 1 },
+        { id: 3, name: "Servicio tres", price: 3000, section: 1 },
+        { id: 4, name: "Servicio cuatro", price: 5000, section: 1 },
+        { id: 5, name: "Servicio cinco", price: 4000, section: 1 },
+        { id: 6, name: "Servicio seis", price: 1000, section: 2 },
+        { id: 7, name: "Servicio siete", price: 2000, section: 2 },
+        { id: 8, name: "Servicio ocho", price: 3000, section: 2 },
+        { id: 9, name: "Servicio nueve", price: 5000, section: 2 },
+        { id: 10, name: "Servicio diez", price: 4000, section: 2 },
+        { id: 11, name: "Servicio once", price: 1000, section: 3 },
+        { id: 12, name: "Servicio doce", price: 2000, section: 3 },
+        { id: 13, name: "Servicio trece", price: 3000, section: 3 },
+        { id: 14, name: "Servicio catorce", price: 5000, section: 3 },
+        { id: 15, name: "Servicio quince", price: 4000, section: 3 },
     ]
 
-    const handleQuantityChange = (id, event) => {
-        let newQuantity = parseInt(event.target.value)
+    const itemsSections = [{ id: 1, name: "Seccion 1" }, { id: 2, name: "Seccion 2" }, { id: 3, name: "Seccion 3" }]
 
-        if (newQuantity > 99) {
-            newQuantity = 99
-        }
-        if (newQuantity < 0) {
-            newQuantity = 0
-        }
+    const handleSections = (id) => {
+        setSections(prevSections => prevSections.map(section => (
+            section.id === id ? { ...section, isOpen: !section.isOpen } : section
+        )))
 
-        const item = SelectableItems.find((items) => items.id === id)
-
-        if (quantities[id] > newQuantity) {
-            setTotal(total - (item.price * ((quantities[id] || 0) - newQuantity)))
-
-        } else {
-
-            console.log(quantities[id])
-
-
-            setTotal(total + (item.price * (newQuantity - (quantities[id] || 0))))
-        }
-
-        setQuantities((prevQuantities) => ({
-            ...prevQuantities,
-            [id]: newQuantity,
-        }))
+        console.log(sections)
     }
 
-    const handleCheckBox = () => {
-        if (isCustomTheme) {
-            setTotal(total - 20000)
-            setIsCustomThem(false)
-        } else {
-            setTotal(total + 20000)
-            setIsCustomThem(true)
-        }
-    }
 
     return (
         <div className="byp-container">
@@ -64,22 +58,47 @@ const BuildYourPackage = () => {
             <div className="byp">
                 <h2>Arma tu Paquete de Decoración</h2>
 
-                {SelectableItems.map((items) =>
-                    <div key={items.id} className="byp-content">
+                <div className="byp-content-container">
 
-                        <div className="byp-description">
-                            {isClient && <FontAwesomeIcon icon={faStar} color="rgb(255, 0, 64)"></FontAwesomeIcon>}
-                            <p>{items.name}</p>
-                            <span>({items.price} c/u)</span>
-                        </div>
 
-                        <input type="number" name="quantity" min="0" max="99" placeholder="0" value={quantities[items.id] || 0} onChange={(e) => handleQuantityChange(items.id, e)}></input>
+                    <div className="byp-section-container">
+                        {isClient &&
+                            itemsSections.map((items) =>
+                                <div key={items.id} className="byp-section">
+                                    <div className="byp-section-title" onClick={() => handleSections(items.id)}>
+                                        {items.name}
+                                        <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                                    </div>
+
+                                    {SelectableItems.filter((secitem) => secitem.section === items.id)
+                                        .map((si) => (
+
+                                            <div key={si.id} className={sections.find((is) => is.id === items.id).isOpen ? "byp-content" : "no-byp-content"}>
+
+                                                <div className="byp-description">
+                                                    {isClient &&<FontAwesomeIcon icon={faStar} color="rgb(255, 0, 64)"></FontAwesomeIcon>}
+                                                    <p>{si.name}</p>
+                                                    <span>({si.price} c/u)</span>
+                                                </div>
+
+                                                <div className="byp-check">
+                                                    {isClient && <FontAwesomeIcon icon={faPlus} size="1x" color="red"></FontAwesomeIcon>}
+                                                </div>
+
+                                            </div>
+                                        ))}
+
+                                </div>
+
+                            )
+                        }
                     </div>
-                )}
 
-                <div className="byp-checkbox">
-                    <input onChange={handleCheckBox} type="checkbox" /><p> Tema personalizado</p>
                 </div>
+
+                {/* <div className="byp-checkbox">
+                    <input onChange={handleCheckBox} type="checkbox" /><p> Tema personalizado</p>
+                </div> */}
 
                 <h2>Precio Total: {total}</h2>
 
