@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
 }
 
 .byp-container h1 {
@@ -17,6 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    align-items: center;
 
 }
 
@@ -56,6 +56,7 @@
 .byp-content-container{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .byp-check{
@@ -70,7 +71,11 @@
 }
 
 .byp-check:hover{
-    background-color: rgb(117, 35, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+.byp-check:hover .icon-byp-check{
+    color: rgb(255, 255, 255);
 }
 
 .byp-section-container{
@@ -82,7 +87,15 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.byp-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 
@@ -97,12 +110,18 @@
   .byp-content {
     opacity: 1;
     max-height: 500px;
+    width: 100%;
   }
   
   .no-byp-content {
     opacity: 0;
+    width: 100%;
     display: flex;
     
+  }
+
+  .byp-description img{
+    width: 80px;
   }
 
 @media(max-width: 700px){

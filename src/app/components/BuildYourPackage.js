@@ -70,19 +70,21 @@ const BuildYourPackage = () => {
                                         <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
                                     </div>
 
+
                                     {SelectableItems.filter((secitem) => secitem.section === items.id)
                                         .map((si) => (
 
                                             <div key={si.id} className={sections.find((is) => is.id === items.id).isOpen ? "byp-content" : "no-byp-content"}>
 
                                                 <div className="byp-description">
-                                                    {isClient &&<FontAwesomeIcon icon={faStar} color="rgb(255, 0, 64)"></FontAwesomeIcon>}
+                                                    {/* {isClient &&<FontAwesomeIcon icon={faStar} color="rgb(255, 0, 64)"></FontAwesomeIcon>} */}
+                                                    <img src="/mesas.jpg"></img>
                                                     <p>{si.name}</p>
                                                     <span>({si.price} c/u)</span>
                                                 </div>
 
                                                 <div className="byp-check">
-                                                    {isClient && <FontAwesomeIcon icon={faPlus} size="1x" color="red"></FontAwesomeIcon>}
+                                                    {isClient && <FontAwesomeIcon className="icon-byp-check" icon={faPlus} size="1x" ></FontAwesomeIcon>}
                                                 </div>
 
                                             </div>
