@@ -97,10 +97,14 @@ const BuildYourPackage = () => {
                                                     {/* {isClient &&<FontAwesomeIcon icon={faStar} color="rgb(255, 0, 64)"></FontAwesomeIcon>} */}
                                                     <img src="/mesas.jpg"></img>
                                                     <p>{si.name}</p>
-                                                    <span>({si.price} c/u)</span>
+                                                    <span>( {si.price} $ )</span>
                                                 </div>
 
-                                                <div className="byp-check" onClick={() => handleCheck(si.price, si.id)}>
+                                                
+
+                                                <div className={isSelected.some(isse => isse.id === si.id) ? "byp-check":"no-byp-check"} 
+                                                
+                                                onClick={() => handleCheck(si.price, si.id)}>
                                                     {isClient && <FontAwesomeIcon className="icon-byp-check" icon={faPlus} size="1x"
                                                     ></FontAwesomeIcon>}
                                                 </div>
