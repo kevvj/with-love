@@ -7,6 +7,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons"
 const BuildYourPackage = () => {
     const [total, setTotal] = useState(0)
     const [isClient, setIsClient] = useState(false)
+    const [isSelected, setIsSelected] = useState([])
     const [sections, setSections] = useState([
         {
             id: 1, isOpen: true
@@ -51,6 +52,22 @@ const BuildYourPackage = () => {
         console.log(sections)
     }
 
+    const handleCheck = (price, newID) => {
+        setTotal(total + price)
+
+        setIsSelected(prevItems => {
+            if (!prevItems.some(item => item.id === newID)) {
+                setTotal(total + price)
+                return [...prevItems, { id: newID }]
+            }else{
+                setTotal(total - price)
+                return prevItems.filter(item => item.id !== newID)
+            }
+        })
+
+        console.log(isSelected)
+    }
+
 
     return (
         <div className="byp-container">
@@ -83,8 +100,9 @@ const BuildYourPackage = () => {
                                                     <span>({si.price} c/u)</span>
                                                 </div>
 
-                                                <div className="byp-check">
-                                                    {isClient && <FontAwesomeIcon className="icon-byp-check" icon={faPlus} size="1x" ></FontAwesomeIcon>}
+                                                <div className="byp-check" onClick={() => handleCheck(si.price, si.id)}>
+                                                    {isClient && <FontAwesomeIcon className="icon-byp-check" icon={faPlus} size="1x"
+                                                    ></FontAwesomeIcon>}
                                                 </div>
 
                                             </div>
