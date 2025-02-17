@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faStar } from "@fortawesome/free-solid-svg-icons"
-import { faCheck } from "@fortawesome/free-solid-svg-icons"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import { faPlus } from "@fortawesome/free-solid-svg-icons"
 const BuildYourPackage = () => {
@@ -83,8 +81,12 @@ const BuildYourPackage = () => {
                             itemsSections.map((items) =>
                                 <div key={items.id} className="byp-section">
                                     <div className="byp-section-title" onClick={() => handleSections(items.id)}>
-                                        {items.name}
-                                        <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                                        <p>{items.name}</p> 
+
+                                        <div id="icon">
+                                        <FontAwesomeIcon icon={faChevronDown} ></FontAwesomeIcon>
+                                        </div>
+                                        
                                     </div>
 
 

@@ -7,6 +7,7 @@
 
 .byp-container h1 {
     font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 .byp {
@@ -30,7 +31,7 @@
     justify-content: space-between;
     border: 1px solid #ccc;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
 }
 
 .byp-description {
@@ -101,8 +102,16 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
+}
+
+.byp-section-title #icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .byp-section{
