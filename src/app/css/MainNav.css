@@ -1,7 +1,9 @@
 .main-nav-img{
-    width: 700px;
+    width: 65%;
     height: 400px;
     background-image: url("/mainimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -30,7 +32,6 @@
 
 
 .main-nav-list{
-    width: 400px;
     height: 120px;
     display: flex;
     flex-direction: column;
