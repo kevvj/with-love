@@ -1,6 +1,6 @@
 .main-nav-img{
     width: 65%;
-    height: 430px;
+    height: 490px;
     background-image: url("/Ninos-jugando-fiesta-infantil.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
 
 
 .main-nav-list{
-    height: 130px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
