@@ -12,9 +12,11 @@ export default function Home() {
 
   return (
     <>
-      <Header />
-      <MainNav></MainNav>
-      <CardList />
+
+      <div className="header-nav">
+        <Header />
+        <MainNav></MainNav>
+      </div>
       <ProfileCard></ProfileCard>
 
       <div className="map-contact">

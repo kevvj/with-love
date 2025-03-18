@@ -35,10 +35,9 @@ const Header = () => {
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
 
-            <div className="logo-img-container" onClick={() => router.push("/")}>
+            {/* <div className="logo-img-container" onClick={() => router.push("/")}>
                 <img src="/Logoimg.png" className="logo-img"></img>
-                {/* <img src="/LogoNombre.png" className="logo-name"></img> */}
-            </div>
+            </div> */}
 
             <div className="header-bar">
 
@@ -48,6 +47,8 @@ const Header = () => {
                     <li><a onClick={() => router.push("/gallery")}>Galeria</a></li>
                     <li><a onClick={() => router.push("/contact")}>Contacto</a></li>
                 </ul>
+
+                <h1>WithLove</h1>
 
                 {/* <button className="Button">Reservar {isClient && <FontAwesomeIcon icon={faStar} size="1x" color="white" />}</button> */}
 

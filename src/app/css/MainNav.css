@@ -1,27 +1,35 @@
 .main-nav-img{
     width: 65%;
-    height: 400px;
-    background-image: url("/mainimg.jpg");
+    height: 430px;
+    background-image: url("/Ninos-jugando-fiesta-infantil.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .main-nav-img-text{
-    background-color: #f4f4f4;
     padding: 7px;
     margin-bottom: 20px;
-    color: #747474;
+    color: #ffffff;
+    text-align: center;
+}
+.main-nav-img-text h2{
+    font-size: 6rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 6px 6px 0 rgb(139, 0, 69);
 }
 
 .main-nav-container{
     display: flex;
     gap: 40px;
-    padding: 50px;
+    padding: 10px ;
     justify-content: center;
     align-items: center;
+    margin: 0 30px;
 }
 
 .main-nav{
@@ -32,7 +40,7 @@
 
 
 .main-nav-list{
-    height: 120px;
+    height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
