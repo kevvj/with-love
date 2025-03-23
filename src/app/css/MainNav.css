@@ -78,4 +78,8 @@
         width: auto;
         padding: 20px;
     }
+
+    .main-nav-img-text h2{
+        font-size: 3rem;
+    }
 }

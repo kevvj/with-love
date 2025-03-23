@@ -1,13 +1,11 @@
 'use client'
 import Header from "./components/Header"
 import ContactSection from "./components/ContactSection"
-import CardList from "./components/CardList"
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"
 import Map from "./components/Map"
-import WhatsappButton from "./components/WhatsappButton";
-import ProfileCard from "./components/ProfileCard";
-import Gallery from "./components/Gallery";
-import MainNav from "./components/MainNav";
+import WhatsappButton from "./components/WhatsappButton"
+import ProfileCard from "./components/ProfileCard"
+import MainNav from "./components/MainNav"
 export default function Home() {
 
   return (
@@ -25,6 +23,7 @@ export default function Home() {
       </div>
       <Footer></Footer>
       <WhatsappButton></WhatsappButton>
+
 
 
     </>
