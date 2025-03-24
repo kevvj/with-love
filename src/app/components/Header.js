@@ -1,17 +1,16 @@
-import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useRouter } from 'next/navigation'
-import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import MenuButton from "./Button/MenuButton";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import MenuButton from "./Button/MenuButton"
+import { faX } from "@fortawesome/free-solid-svg-icons"
 const Header = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isClient, setIsClient] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false)
+    const [isClient, setIsClient] = useState(false)
 
+    const [isclosed, setiIsclosed] = useState(true)
     const router = useRouter()
 
     useEffect(() => {
@@ -32,13 +31,15 @@ const Header = () => {
         }
     }, [])
 
+    const handleMenu = () => {
+        setiIsclosed(!isclosed)
+        console.log(isclosed)
+    }
+
 
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
 
-            {/* <div className="logo-img-container" onClick={() => router.push("/")}>
-                <img src="/Logoimg.png" className="logo-img"></img>
-            </div> */}
 
             <div className="header-bar">
 
@@ -51,40 +52,40 @@ const Header = () => {
 
                 <h1>WithLove</h1>
 
-                <div className="dropdown">
+                <div className="dropdown" onClick ={() => handleMenu()}>
 
                     <MenuButton></MenuButton>
 
-                    
+                    <div className="dropdown-content" style={{ display: isclosed ? "none" : "block" }}>
+
+                        <div className="dropdown-button-container">
+                            <button onClick={() => handleMenu()}>
+                                <FontAwesomeIcon icon={faX} color="black" className="close-button"></FontAwesomeIcon>
+                            </button>
+                        </div>
+
                         <ul>
                             <li onClick={() => router.push("/")}>
                                 <a>Inicio</a>
 
-                                <span>
-                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                                </span>
-
                             </li>
                             <li>
                                 <a>Servicios</a>
-                                <span>
-                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                                </span>
+
                             </li>
                             <li onClick={() => router.push("/gallery")}>
                                 <a>Galeria</a>
-                                <span>
-                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                                </span>
+
                             </li>
                             <li onClick={() => router.push("/contact")}>
                                 <a>Contacto</a>
-                                <span>
-                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                                </span>
+
                             </li>
                         </ul>
-                    
+
+                    </div>
+
+
 
 
                 </div>
@@ -96,8 +97,7 @@ const Header = () => {
                 </div>
             </div>
 
-
-
+            
         </header>
     )
 }
