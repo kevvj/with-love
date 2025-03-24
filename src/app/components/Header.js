@@ -55,40 +55,44 @@ const Header = () => {
 
                     <MenuButton></MenuButton>
 
-                    <ul>
-                        <li onClick={() => router.push("/")}>
-                            <a>Inicio</a>
+                    <div>
+                        <ul>
+                            <li onClick={() => router.push("/")}>
+                                <a>Inicio</a>
 
-                            <span>
-                                <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                            </span>
+                                <span>
+                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                                </span>
 
-                        </li>
-                        <li>
-                            <a>Servicios</a>
-                            <span>
-                                <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                            </span>
-                        </li>
-                        <li onClick={() => router.push("/gallery")}>
-                            <a>Galeria</a>
-                            <span>
-                                <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                            </span>
-                        </li>
-                        <li onClick={() => router.push("/contact")}>
-                            <a>Contacto</a>
-                            <span>
-                                <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
-                            </span>
-                        </li>
-                    </ul>
+                            </li>
+                            <li>
+                                <a>Servicios</a>
+                                <span>
+                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                                </span>
+                            </li>
+                            <li onClick={() => router.push("/gallery")}>
+                                <a>Galeria</a>
+                                <span>
+                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                                </span>
+                            </li>
+                            <li onClick={() => router.push("/contact")}>
+                                <a>Contacto</a>
+                                <span>
+                                    <FontAwesomeIcon icon={faGreaterThan}></FontAwesomeIcon>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </div>
 
                 <div className="header-social-media">
-                    <a href="https://www.instagram.com/decoraciondeeventoswithlove/"><FontAwesomeIcon icon={faInstagram} size="1x" color="white" className = "social-items"></FontAwesomeIcon></a>
-                    <a href="https://www.facebook.com/creatividadwithlove?mibextid=ZbWKwL" ><FontAwesomeIcon icon={faFacebook} size="1x" color="white" className = "social-items"></FontAwesomeIcon></a>
-                    <a href="https://wa.me/+573216301533"><FontAwesomeIcon icon={faWhatsapp} size="1x" color="white" className = "social-items"></FontAwesomeIcon></a>
+                    <a href="https://www.instagram.com/decoraciondeeventoswithlove/"><FontAwesomeIcon icon={faInstagram} size="1x" color="white" className="social-items"></FontAwesomeIcon></a>
+                    <a href="https://www.facebook.com/creatividadwithlove?mibextid=ZbWKwL" ><FontAwesomeIcon icon={faFacebook} size="1x" color="white" className="social-items"></FontAwesomeIcon></a>
+                    <a href="https://wa.me/+573216301533"><FontAwesomeIcon icon={faWhatsapp} size="1x" color="white" className="social-items"></FontAwesomeIcon></a>
                 </div>
             </div>
 
