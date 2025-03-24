@@ -66,6 +66,7 @@
     .main-nav-container{
         flex-direction: column;
         padding: 20px;
+        margin: 0;
     }
 
     .main-nav-img{
