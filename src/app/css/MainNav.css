@@ -62,7 +62,7 @@
     font-size: 1rem;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 1000px) {
     .main-nav-container{
         flex-direction: column;
         padding: 20px;
