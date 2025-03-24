@@ -55,7 +55,7 @@ const Header = () => {
 
                     <MenuButton></MenuButton>
 
-                    <div>
+                    
                         <ul>
                             <li onClick={() => router.push("/")}>
                                 <a>Inicio</a>
@@ -84,7 +84,7 @@ const Header = () => {
                                 </span>
                             </li>
                         </ul>
-                    </div>
+                    
 
 
                 </div>
