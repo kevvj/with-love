@@ -71,12 +71,14 @@
     .main-nav-img{
         width: 100%;
         height: 300px;
+
         
     }
 
     .main-nav-list{
         width: auto;
         padding: 20px;
+        
     }
 
     .main-nav-img-text h2{
