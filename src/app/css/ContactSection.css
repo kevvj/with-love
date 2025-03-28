@@ -1,91 +1,99 @@
-.contact-section-container {
-    display: flex;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+.contact-section-container{
+    margin-right: 100px;
+}
 .contact-section {
-    min-height: 300px;
-    display: flex;
-}
-
-.contact-section-spinner {
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-}
-
-
-.contact-section-spinner h2 {
-    font-size: 1.3rem;
-    margin: 0;
-    color: #616161;
-    font-family: 'Newsreader', serif;
-}
-
-
-.contact-section h1 {
-    font-size: 4rem;
-    font-weight: 500;
-    color: #ffffff;
-    margin-top: 15px;
-    margin: 0;
-}
-
-.contact-section h2 {
-    font-size: 1.6rem;
-    margin: 0;
-    color: #000000;
-    transition: color 0.3s ease;
-}
-
-.contact-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: var(--blue-color);
-    padding: 40px;
+    background: linear-gradient(135deg, #64d5ff, #5ebffb, #1062b5);
+    backdrop-filter: blur(20px);
     border-radius: 15px;
-    height: 300px;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 153, 255, 0.6);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+    animation: glow-border 1.5s infinite alternate;
+  }
+  
+  .contact-section::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 2px solid rgba(0, 153, 255, 0.5);
+    clip-path: polygon(12% 0, 88% 0, 100% 12%, 100% 88%, 88% 100%, 12% 100%, 0 88%, 0 12%);
+    opacity: 0.7;
+  }
+  
+  @keyframes glow-border {
+    from { box-shadow: 0 0 5px rgba(0, 153, 255, 0.6); }
+    to { box-shadow: 0 0 20px rgba(0, 153, 255, 1); }
+  }
+
+.contact-section:hover {
+    transform: translateY(-5px);
+}
+
+.contact-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
 }
 
 .contact-content a {
-    all: unset;
     display: flex;
     align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    color: #616161;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin: 12px 0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-.contact-content h2:hover{
-    color: #FF7043;
+.contact-content a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
-@media(max-width: 700px) {
-    .contact-section{
-        min-height: auto;
-    }
-    .contact-section h1 {
-        font-size: 2.5rem;
-    }
-
-    .contact-section h2 {
-        font-size: 1rem;
-    }
-
-    .contact-section-spinner h1 {
-        font-size: 2.5rem;
-    }
-
-    .contact-section-spinner h2 {
-        font-size: 1rem;
-    }
-
-    .contact-section-container {
-        padding: 15px 0;
-    }
-
+.contact-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12px;
 }
+
+.contact-content svg {
+    font-size: 22px;
+    color: #000000;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px rgba(37, 211, 102, 0.8));
+}
+
+.whatsapp-button {
+    width: 100px;
+    transition: transform .3s ease;
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        bottom: 15px;
+        left: 15px;
+        padding: 12px;
+    }
+}
+
+
+
