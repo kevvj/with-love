@@ -6,6 +6,7 @@ import Map from "./components/Map"
 import WhatsappButton from "./components/WhatsappButton"
 import ProfileCard from "./components/ProfileCard"
 import MainNav from "./components/MainNav"
+import Workshop from "./components/Workshop"
 export default function Home() {
 
   return (
@@ -16,6 +17,8 @@ export default function Home() {
         <MainNav></MainNav>
       </div>
       <ProfileCard></ProfileCard>
+
+      <Workshop></Workshop>
 
       <div className="map-contact">
         <Map></Map>

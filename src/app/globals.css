@@ -14,6 +14,7 @@
 @import "./css/ContactArea.css";
 @import "./css/MainNav.css";
 @import "./css/CompletPackages.css";
+@import "./css/Workshop.css";
 
 :root {
   --blue-color: #64d5ff;
