@@ -1,42 +1,26 @@
-.footer {
-    margin-top: 50px;
-    color: #333;
-    padding: 20px 0;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    position: relative;
-    margin-top: 200px;
+.footer{
+    margin-top: 100px;
+    padding: 15px 0 5px;
+    background-color: var(--rose-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer::before {
-    content: "";
-    display: block;
-    width: 50%;
-    height: 1px; 
-    background-color: #ccc; 
-    position: absolute;
-    top: 0; 
-    left: 25%; 
+.footer-info{
+    max-width: 1080px;
+    padding-bottom: 10px;
+    
 }
 
-
-
-
-
-
-.footer-copy p{
+.footer-info p{
     font-size: 1.2rem;
-    color: #555;
 }
 
-.footer-copy p a{
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: #87ceeb;
-    transition: color 0.3s ease;
-}
-
-.footer-copy p a:hover {
-    color: #f350ff; 
-    text-decoration: underline;
+.footer-info table{
+    display: flex;
+    justify-content: end;
+    border-spacing: 20px 0;
+    font-size: 1.6rem;
 }
