@@ -1,0 +1,188 @@
+.taller-page-container{
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(150deg, #f7e3f0, #fdf3fd, #fdeefb, #f6ffea);
+    padding: 1px;
+}
+.taller-title-container{
+    margin-top: 120px;
+}
+.taller-title-container span{
+
+    font-size: 50px; 
+    color: #d20892; 
+    line-height: 90%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.taller-decoraciones {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none; 
+}
+
+.decoracion {
+    position: absolute;
+    width: 50px;
+}
+
+.sol {
+    top: 20%;
+    left: 25%;
+    width: 150px;
+    rotate: 360grad;
+}
+
+.arcoiris {
+    top: 20%;
+    right: 25%;
+    width: 170px;
+    rotate: 20grad;
+}
+
+.mariposa {
+    bottom: 40%;
+    right: 28%;
+    width: 80px;
+    rotate: 100rad;
+}
+
+.flor {
+    top: 50%;
+    left: 29%;
+    width: 70px;
+}
+
+.estrella {
+    top: 25%;
+    left: 37%;
+    width: 30px;
+}
+
+/*contenedores*/
+
+.taller-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding: 20px;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    
+}
+
+.taller-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 30px;
+    height: 330px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease;
+    
+}
+
+.taller-card:hover {
+    transform: scale(1.03);
+}
+
+.taller-card img {
+    width: 220px;
+    height: 210px;
+}
+
+.taller-card h1 {
+    font-size: 30px;
+    color: #23b868;
+    margin-bottom: 10px;
+}
+
+.taller-card span {
+    font-size: 16px;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.taller-card button {
+    background-color: #cb73fb;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.taller-card button:hover {
+    background-color: #a600ff;
+}
+
+
+.taller-bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding: 20px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    
+}
+.taller-card-bottom {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 30px;
+    height: 340px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease;
+    
+}
+.taller-card-bottom img {
+    width: 200px;
+    height: 180px;
+}
+.taller-card-bottom h1{
+    font-size: 30px;
+    color: #23b868;
+    margin-bottom: 10px;
+}
+
+.taller-card-bottom span {
+    font-size: 16px;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.taller-card-bottom button {
+    background-color: #cb73fb;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.taller-card-bottom button:hover {
+    background-color: #a600ff;
+}
+
