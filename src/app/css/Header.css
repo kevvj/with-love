@@ -1,10 +1,24 @@
-.header {
-    margin-top: 20px;
+.top {
+    background-color: var(--rose-color);
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
     display: flex;
-    padding: 10px 50px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.header {
+    display: flex;
     align-items: center;
     justify-content: center;
     transition: color 0.3s ease;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
 .header-spacer {
@@ -40,10 +54,10 @@
 .header ul li {
     cursor: pointer;
     transition: color 0.3s ease;
-    
+
 }
 
-.header ul li a{
+.header ul li a {
     font-size: 1.1rem;
 }
 
@@ -70,56 +84,102 @@
 
 .header-social-media {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    align-items: center;
+    color: #3b3b3b;
 }
 
 .header-social-media a {
     all: unset;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .header-bar {
-    background-color: var(--rose-color);
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
-    padding: 15px 40px;
     border-radius: 10px;
-    color: white;
     position: relative;
+
+    flex-direction: column;
+    gap: 15px;
+
 }
 
-.header-bar h1{
-    font-size: 20px;
+.header-bar h1 {
+    font-size: 37px;
+    text-align: center;
+}
+
+.header-bar h1 span {
+    font-size: 37px;
+    color: var(--purple-color);
+}
+
+.social-items {
+    font-size: 1.2rem;
+}
+
+.header-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+}
+
+.header-social-item {
+    list-style: none;
+    display: flex;
+    gap: 15px;
     margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 0;
+    color: #3b3b3b;
+
 }
 
-.social-items{
-    font-size: 30px;
+.header-social-item li {
+    font-size: 0.85rem;
 }
 
+.header-social-media img {
+    width: 25px;
+    height: auto;
+}
+
+.header-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.header-social-media .span{
+    font-size: 0.85rem;
+}
 @media(max-width: 1000px) {
-  
-    .header{
+
+    .header {
         padding: 5px 20px;
     }
-    .social-items{
+
+    .social-items {
         font-size: 20px;
     }
 
-    .header-bar{
+    .header-bar {
         padding: 15px 20px;
     }
 
     .dropdown-button svg rect {
-        fill: white; 
-      }
+        fill: white;
+    }
 
-    .dropdown-button{
+    .dropdown-button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -219,9 +279,10 @@
         gap: 10px;
     }
 
-    .close-button{
+    .close-button {
         font-size: 20px;
     }
+
     @keyframes aparecer {
         from {
             opacity: 0;
