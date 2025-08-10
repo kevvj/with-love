@@ -41,7 +41,7 @@ const Header = () => {
     return (
         <header className={`header ${isScrolled ? "scrolled" : ""}`}>
 
-            <div className="top">Creando momentos mágicos que tus pequeños recordarán por siempre</div>
+            <div className="top">Creando momentos mágicos que tus pequeños recordarán por siempre.</div>
 
 
             <div className="header-bar">
